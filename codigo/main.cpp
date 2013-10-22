@@ -1,7 +1,10 @@
 #include <cstdlib>
+#include <iostream>
 #include "common.h"
 #include "grafo.h"
 #include "exacto.cpp"
+#include "goloso.cpp"
+#include "busquedalocal.cpp"
 
 using namespace std;
 
@@ -35,6 +38,9 @@ int main() {
 	Grafo grafo = leerInput(cin);
 
 	MinimoConjuntoDominanteExacto solver(grafo);
+	//MinimoConjuntoDominanteGoloso solver(grafo);
+	//MinimoConjuntoDominanteLocal solver(grafo);
+
 	vuint solucion = solver.resolver();
 
 	escribirOutput(cout, solucion);

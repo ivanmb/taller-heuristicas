@@ -1,11 +1,12 @@
 #include "common.h"
 #include "grafo.h"
-#include <iostream>
+#include "mcd.h"
 #include <set>
 
-class MinimoConjuntoDominanteExacto {
+class MinimoConjuntoDominanteExacto : MinimoConjuntoDominante {
+
 		public:
-			MinimoConjuntoDominanteExacto(const Grafo& g) : grafo(g) {
+			MinimoConjuntoDominanteExacto(const Grafo& g) : MinimoConjuntoDominante(g) {
 				mejorSolucion.reserve(grafo.nodos());
 				conjuntoActual.reserve(grafo.nodos());
 			}
@@ -17,8 +18,8 @@ class MinimoConjuntoDominanteExacto {
 				backtrack(0);
 				return mejorSolucion;
 			}
+
 		private:
-			const Grafo& grafo;
 			vuint mejorSolucion;
 			vuint conjuntoActual;
 
