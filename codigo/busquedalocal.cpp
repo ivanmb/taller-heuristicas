@@ -1,22 +1,14 @@
-#include "common.h"
-#include "grafo.h"
-#include "mcd.h"
+#include "busquedalocal.h"
 
-class MinimoConjuntoDominanteLocal : MinimoConjuntoDominante {
+// No borrar MinimoConjuntoDominante(g) de la lista de inicialización
+MinimoConjuntoDominanteLocal::MinimoConjuntoDominanteLocal(const Grafo& g) : MinimoConjuntoDominante(g) {			
+	// Agregar comportamiento si hace falta
+}
 
-		public:
-			MinimoConjuntoDominanteLocal(const Grafo& g) : MinimoConjuntoDominante(g) {
-				
-			}
+vuint MinimoConjuntoDominanteLocal::resolver() {
+	// Rellenar con la solución
+	// Pueden acceder a la variable grafo definida en MinimoConjuntoDominante
+	vuint solucion;
 
-			vuint resolver(){
-				// Rellenar con la solución
-				// Pueden acceder a la variable grafo definida en MinimoConjuntoDominante
-				vuint solucion;
-
-				return solucion;
-			}
-			
-		private:
-			// Definir otros métodos que necesiten
-};
+	return solucion;
+}
