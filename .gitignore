@@ -1,3 +1,4 @@
+# LaTex Ignores
 *.acn
 *.acr
 *.alg
@@ -30,3 +31,22 @@
 *.vrb
 *.xdy
 *.tdo
+*.pdf
+
+# Mac OSX
+.DS_Store
+
+# C++ Ignore
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
