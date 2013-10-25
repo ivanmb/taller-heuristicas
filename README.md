@@ -8,10 +8,10 @@ Aclaración los id de los vértices van de 1 an
 
 **Entrada**
 
-#nodos #aristas
+\#nodos #aristas
 nodoi nodoj (arista no orientada entre nodoi y nodoj)
 
 **Salida**
 
-#nodos del conjunto
+\#nodos del conjunto
 nodoi nodoj nodow
