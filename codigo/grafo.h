@@ -19,7 +19,7 @@ class Grafo {
 			}
 			
 			//Indica si dos nodos son vecinos
-			bool sonVecinos(uint v, uint w) {
+			bool sonVecinos(uint v, uint w) const {
 				assert(v >= 0 && v < nodos());
 				assert(w >= 0 && w < nodos());
 
